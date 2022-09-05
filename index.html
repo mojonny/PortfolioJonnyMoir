@@ -2,26 +2,46 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jonny Moir's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-        <header>
-                Jonny Moir - Web Design & Development Portfolio
-                  <ul>
+        <div class="header">
+                Jonny Moir - Designer & Developer
+                  <ul class="nav">
                   <li><a href="./pages/about.html">About</a></li>
                   <li><a href="./pages/design.html">Design</a></li>
-                  <li><a href="./pages/development.html">Development</a></li>
+                  <li><a href="./pages/development.html">Develop</a></li>
                   <li><a href="./pages/contact.html">Contact</a></li>
                   </ul>
-        </header>
+
+                  <ul class="social">
+                    <li class="LinkedIn">
+                      <a href="https://www.linkedin.com/in/jonathanmoir" 
+                      title="Connect with me on Linkedin" target="_blank">
+                      <img alt="LinkedIn" src="./images/LinkedIn-Logos/LI-In-Bug.png" style="height:40px; width:40px"></a>
+                    </li>
+                    <li class="GitHub">
+                      <a href="https://github.com/mojonny" 
+                      title="Check out my GitHub" target="_blank">
+                      <img alt="GitHub" src="./images/GitHub-Mark/PNG/GitHub-Mark-64px.png" style="height:40px; width:40px"></a>
+                      </li>
+                  </ul>
+        </div>
+
         <main>
-            <form>
-            Name: <input type="Name"><br>
-            Email: <input type="Email"><br>
-            <button>Contact Me</button>
-            </form>
+          <intro>
+            <h1 class="intro-id">Hello! My name is</h1>
+            <h2 class="name">Jonny Moir</h2>
+            <p>I am a former engineer/educator turned UX Designer and Front-End Developer. I am located in Calgary, Alberta and am currently pursuing work locally and remotely. <br>
+            I am passionate about designing solutions for diverse problems, helping others, and love learning.<br>
+            Please explore my portfolio and if you think we would make a great team, let me know!
+            </p>
+          </intro>
+
+          <a class="email-link" href="mailto:moirjonathan@gmail.com">Say Hello!</a>
         </main>
   </body>
  <!-- add links at top of page (linkedin,github). also add links to view code running and to the github repo-->
