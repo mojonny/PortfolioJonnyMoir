@@ -37,6 +37,15 @@ body {
       align-items: center;
     }
 
+    .courses {
+      display:flex;
+      flex-direction:column;
+      padding: 10px;
+      gap: 10px;
+      align-items: flex-start;
+      text-align: left;
+    }
+
     .big-heading {
       font-size: 70px;
       color: #ccd6f6;
@@ -54,7 +63,7 @@ body {
         align-items: left;
     }
 
-    .intropic {
+    .intropicture {
       border-radius: 0 20px 20px 20px;
       align-self: center;
     }
