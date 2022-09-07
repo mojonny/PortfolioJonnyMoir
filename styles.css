@@ -84,10 +84,10 @@ body {
       /* For Home Page */
 
       .intro {
-        width: 95%;
+        width: 75%;
         margin: 10px;
         border: solid 2px;
-        border-radius: 30px;
+        border-radius: 0 20px 20px 20px;
         padding: 10px;
         display: flex;
         flex-direction: column;
@@ -105,15 +105,98 @@ body {
       margin: 0px;
       }
 
+
+
+      * {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+
+
+
+
         /* For About Page */
 
+        .container{
+          display:flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        
         ul.courses {
-        list-style-type:circle;
-        max-width: 80%;
-        }
+                    list-style-type:circle;
+                    max-width: 80%;
+                    }
 
-        .about {
-        max-width: 80%;
-        }
+          .about, .experience, .education, .resume {
+                    max-width: 80%;
+                    padding: 10px;
+                    margin: 10px;
+                    border: solid #ccd6f6 3px;
+                    border-radius: 0 30px 30px 30px;
+                    }
+
+            .contact {
+                      display:flex;
+                      flex-direction: column;
+                      align-items: center;
+                      max-width: 20%;
+                      padding: 10px;
+                      margin:10px;
+                      border: solid #ccd6f6 3px;
+                      }
+    
+  
+
           /* For Portfolio Page */
             /* For Contact Page */
