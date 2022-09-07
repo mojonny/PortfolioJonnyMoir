@@ -35,12 +35,13 @@ body {
 
     a {
       color: #FFFFFF;
-      font-size: 12px;
+      font-size: 15px;
       font-weight: 100;
       text-decoration: none;
+      padding: 10px;
     }
   
-    ul {
+    ul.nav , ul.social {
       display: flex;
       list-style: none;
       padding: 10px;
@@ -106,14 +107,13 @@ body {
 
         /* For About Page */
 
-        .courses {
-        display:flex;
-        flex-direction:column;
-        padding: 10px;
-        gap: 10px;
-        align-items: flex-start;
-        text-align: left;
+        ul.courses {
+        list-style-type:circle;
+        max-width: 80%;
         }
 
+        .about {
+        max-width: 80%;
+        }
           /* For Portfolio Page */
             /* For Contact Page */
