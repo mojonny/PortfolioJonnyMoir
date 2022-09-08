@@ -1,77 +1,65 @@
 /* For the whole site */
 body {
-    background: #0a192f;
-    height: 100vh;
-    margin: 0;
-    overflow: scroll;
-    font-family: 'Courier New', monospace;
-    color:#ccd6f6;
-    font-size: 16px;
-    }
+      background: #0a192f;
+      height: 100vh;
+      margin: 0;
+      overflow: scroll;
+      font-family: 'Courier New', monospace;
+      color:#ccd6f6;
+      font-size: 16px;
+      }
   
-  h1{
+  h1 {
       color:#FFFFFF;
       font-size: 35px;
-    }
+     }
 
-    h2{
-      color:#8892b0;
-      font-size: 30px;
-      }
+    h2 {
+       color:#8892b0;
+       font-size: 30px;
+       }
 
-      header {
-      font-weight: bolder;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      }
+      header,
+      footer {
+             font-weight: bolder;
+             display: flex;
+             justify-content: space-between;
+             align-items: center;  
+             }
+        
+        a {
+          color: #FFFFFF;
+          text-decoration: none;
+          }
 
-    a {
-      color: #FFFFFF;
-      font-size: 16px;
-      text-decoration: none;
-    }
-  
-    ul.nav {
-      display: flex;
-      list-style: none;
-      padding: 10px;
-      gap: 10px;
-      align-items: center;
-    }
+          ul.nav {
+                  font-weight:bold;
+                  display: flex;
+                  list-style: none;
+                  padding: 10px;
+                  gap: 10px;
+                  align-items: center;
+                 }
 
-    .footer {
-        color: #ffffff;
-        font-size: 16px;
-        font-weight: 100;
-        list-style: none;
-        padding: 0;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        max-width: 95%;
-      }
+            .footnote {
+                       font-size: 12px;
+                      }
 
-      button {
-        border:solid 2px;
-        border-color: #ccd6f6;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 30px;
-        width: 150px;
-        background-color: #0a192f;
-        border-radius: 5px;
-      }
+              button {
+                      border:solid 2px;
+                      border-color: #ccd6f6;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      height: 30px;
+                      width: 150px;
+                      background-color: #0a192f;
+                      border-radius: 5px;
+                     }
 
-      .email-link {
-        color:#ccd6f6;
-        font-size: large;
-      }
+/* For Home Page */
 
-      /* For Home Page */
-
-      .intro {
+.intro {
         width: 95%;
         margin: 10px;
         border: solid 2px;
@@ -80,46 +68,52 @@ body {
         display: flex;
         flex-direction: column;
         align-items: left;
-        }
+       }
 
-      .big-heading {
-      font-size: 50px;
-      color: #ccd6f6;
-      margin: 0px;
-      }
+  .big-heading {
+                font-size: 50px;
+                color: #ccd6f6;
+                margin: 0px;
+               }
 
-        /* For About Page */
+    .email-link {
+                 color:#ccd6f6;
+                 font-size: large;
+                }
 
-        .container{
-          display:flex;
-          flex-direction: column;
-          align-items: center;
-        }
+/* For About Page */
+
+.container {
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+           }
         
-        ul.courses {
-                    list-style-type:circle;
-                    max-width: 80%;
-                    }
+  ul.courses {
+              list-style-type:circle;
+              max-width: 80%;
+             }
 
-          .about, .experience, .education, .resume {
-                    max-width: 80%;
-                    padding: 10px;
-                    margin: 10px;
-                    border: solid #ccd6f6 3px;
-                    border-radius: 0 30px 30px 30px;
-                    }
+  .about, 
+  .experience, 
+  .education, 
+  .resume {
+           max-width: 80%;
+           padding: 10px;
+           margin: 10px;
+           border: solid #ccd6f6 3px;
+           border-radius: 0 30px 30px 30px;
+          }
 
-            .contact {
-                      display:flex;
-                      flex-direction: column;
-                      align-items: center;
-                      max-width: 20%;
-                      padding: 10px;
-                      margin:10px;
-                      border: solid #ccd6f6 3px;
-                      }
-    
-  
+    .contact {
+              display:flex;
+              flex-direction: column;
+              align-items: center;
+              max-width: 20%;
+              padding: 10px;
+              margin:10px;
+              border: solid #ccd6f6 3px;
+             }
 
-          /* For Portfolio Page */
-            /* For Contact Page */
+/* For Portfolio Page */
+/* For Contact Page */
