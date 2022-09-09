@@ -1,27 +1,40 @@
 /* For the whole site */
+html {
+  font-family: 'Courier New', monospace;
+}
+
 body {
       background: #0a192f;
-      height: 100vh;
-      margin: 0;
       overflow: scroll;
-      font-family: 'Courier New', monospace;
       color:#ccd6f6;
-      font-size: 16px;
+      margin: 0 auto;
+      width: min(1000px, calc(70% + 100px));
       }
   
-  h1 {
+h1 {
       color:#FFFFFF;
-      font-size: 30px;
       font-family: 'Bungee Shade', cursive;
-      margin: 0;
-     }
+      letter-spacing: 2px;
+      font-size: clamp(1.8rem, 2.5vw, 2.8rem);
+    }
+    
+h2 {
+    color:#ccd6f6;
+    font-size: 28px;
+    margin: 0;
+   }
 
-    h2 {
-       color:#ccd6f6;
-       font-size: 28px;
-       margin: 0;
-       }
+p {
+   line-height: 1.5;
+   font-size: max(1.2rem, 1.2vw);
+  }
 
+  a {
+    color: #FFFFFF;
+    text-decoration: none;
+    line-height: 1.5;
+    font-size: max(1.0rem, 1.0vw);
+    }
       header,
       footer {
              font-weight: bolder;
@@ -32,16 +45,10 @@ body {
         
              .mylogo {
               color:#FFFFFF;
-              font-size: 25px;
+              font-size: 4vw;
               font-family: 'Bungee Shade', cursive;
               margin: 0;
              }
-
-        a {
-          color: #FFFFFF;
-          text-decoration: none;
-          font-size: 14px;
-          }
 
           ul.nav {
                   font-weight:bold;
@@ -84,9 +91,9 @@ body {
 
 .bigtitle {
   color:#2172ff;
-  font-size: 40px;
   font-family: 'Bungee Shade', cursive;
-  margin: 0;
+  letter-spacing: 2px;
+  font-size: clamp(1.8rem, 3.0vw, 3.5rem);
 }
 
 .intro, .gratitude {
@@ -126,7 +133,7 @@ body {
   .experience, 
   .education, 
   .resume {
-           max-width: 80%;
+           max-width: 100%;
            padding: 10px;
            margin: 10px;
            border: solid #ccd6f6 3px;
@@ -137,10 +144,10 @@ body {
               display:flex;
               flex-direction: column;
               align-items: center;
-              max-width: 20%;
-              padding: 10px;
-              margin:10px;
-              border: solid #ccd6f6 3px;
+              max-width: 100%;
+              padding: 10%;
+              margin:10%;
+              border: solid #ccd6f6 3vw;
              }
 
 
@@ -177,5 +184,6 @@ body {
   border: solid #ffffff; 
   border-radius:50px;
   padding: 10px;
-  max-width: 55%;
+  max-width: 100%;
+  min-width: 0;
  }
