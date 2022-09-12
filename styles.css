@@ -1,5 +1,62 @@
 /* For the whole site */
 
+html {
+  font-family: 'Courier New', monospace;
+}
+
+body {
+      background: #0a192f;
+      overflow: scroll;
+      color:#ccd6f6;
+      margin: 0 auto;
+      width: 80%;
+      }
+  
+h1 {
+      color:#FFFFFF;
+      font-family: 'Bungee Shade', cursive;
+      letter-spacing: 2px;
+      font-size: 3.5vw;
+      text-align: center;
+    }
+    
+h2 {
+    color:#ccd6f6;
+    font-size: 3.2vw;
+   }
+
+   h3 {
+    color:#ccd6f6;
+    font-size: 3.0vw;
+   }
+
+p,li {
+   line-height: 1.5;
+   font-size: 2.5vw;
+  }
+
+  a {
+    color: #FFFFFF;
+    text-decoration: none;
+    line-height: 1.5;
+    font-size: 2.5vw;
+    }
+      
+      footer {
+             font-weight: bolder;
+             display: flex;
+             justify-content: space-between;
+             align-items: center;  
+             }
+        
+             .mylogo {
+              color:#FFFFFF;
+              font-size: 4vw;
+              font-family: 'Bungee Shade', cursive;
+              margin: 0;
+             }
+
+
 /* [ON BIG SCREEN] */
 /* (A) WRAPPER */
 #hamnav {
@@ -17,7 +74,7 @@
   text-decoration: none;
   text-align: center;
 }
-#hamitems a:hover { background: #af0d0d; }
+#hamitems a:hover { background: #2172ff; }
 
 /* (C) HIDE HAMBURGER */
 #hamnav label, #hamburger { display: none; }
@@ -36,7 +93,7 @@
   #hamnav label { 
     display: inline-block; 
     color: white;
-    background: #a02620;
+    background: #2172ff;
     font-style: normal;
     font-size: 1.2em;
     padding: 10px;
@@ -47,63 +104,7 @@
   #hamnav input:checked ~ #hamitems { display: block; }
 }
 
-
-
-
-
-
-html {
-  font-family: 'Courier New', monospace;
-}
-
-body {
-      background: #0a192f;
-      overflow: scroll;
-      color:#ccd6f6;
-      margin: 0 auto;
-      width: 80%;
-      }
-  
-h1 {
-      color:#FFFFFF;
-      font-family: 'Bungee Shade', cursive;
-      letter-spacing: 2px;
-      font-size: 3.5vw;
-    }
-    
-h2 {
-    color:#ccd6f6;
-    font-size: 28px;
-    margin: 0;
-   }
-
-p {
-   line-height: 1.5;
-   font-size: 2.5vw;
-  }
-
-  a {
-    color: #FFFFFF;
-    text-decoration: none;
-    line-height: 1.5;
-    font-size: max(1.0rem, 1.0vw);
-    }
-      
-      footer {
-             font-weight: bolder;
-             display: flex;
-             justify-content: space-between;
-             align-items: center;  
-             }
-        
-             .mylogo {
-              color:#FFFFFF;
-              font-size: 4vw;
-              font-family: 'Bungee Shade', cursive;
-              margin: 0;
-             }
-
-          ul.nav {
+ul.nav {
                   font-weight:bold;
                   display: flex;
                   list-style: none;
@@ -147,14 +148,22 @@ p {
   font-family: 'Bungee Shade', cursive;
   letter-spacing: 2px;
   font-size: clamp(1.8rem, 3.0vw, 3.5rem);
+  text-align: center;
 }
+
+.landingcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 
 .intro, .gratitude {
         width: 95%;
         margin: 10px;
         border: solid 2px;
         border-radius: 0 20px 20px 20px;
-        padding: 20px;
+        padding: 20px 20px 0 20px;
        }
 
   ul.gratlist {
@@ -163,11 +172,35 @@ p {
 
   li.gratitem {
     margin-bottom: 15px;
+    line-height: 1.5;
+    font-size: 2.5vw;
+  }
+  
+  a.gratlinks {
+    color: #FFFFFF;
+    text-decoration: underline;
   }
 
   .email-link {
                color:#ccd6f6;
               }
+
+/* For About Page */
+.container1 {
+  display:flex;
+  margin: 0 2% 0 2%;
+  width: 100%;
+ }
+
+.climbing, .building, .art, .funfacts {
+  max-width: 50%;
+  padding: 10px;
+  margin: 10px;
+  border: solid #ccd6f6 3px;
+  border-radius: 0 30px 30px 30px;
+  align-items: center;
+  justify-content: center;
+}
 
 /* For Experience Page */
 
@@ -202,23 +235,6 @@ p {
               margin:10%;
               border: solid #ccd6f6 3vw;
              }
-
-
-/* For About Page */
-.container1 {
-  display:flex;
-  margin: 0 2% 0 2%;
- }
-
-.climbing, .building, .art, .funfacts {
-  max-width: 50%;
-  padding: 10px;
-  margin: 10px;
-  border: solid #ccd6f6 3px;
-  border-radius: 0 30px 30px 30px;
-  align-items: center;
-  justify-content: center;
-}
 
 /* For Portfolio Page */
 .pdfframe {
