@@ -68,22 +68,27 @@ p,li {
               font-family: 'Bungee Shade', cursive;
               margin: 0;
              }
+             
+ul.nav {list-style-type: none;
+            display: flex;}
 
 
 /* [ON BIG SCREEN] */
 /* (A) WRAPPER */
 #hamnav {
-  width: 100%;
+
+      width: 100%;
   background: #000;
 }
 
 /* (B) HORIZONTAL MENU ITEMS */
 #hamitems { display: flex; }
+
 #hamitems a {
   flex-grow: 1;
   flex-basis: 0;
   padding: 10px;
-  color: white;
+  color: #ccd6f6;
   text-decoration: none;
   text-align: center;
 }
@@ -116,15 +121,6 @@ p,li {
   #hamitems { display: none; }
   #hamnav input:checked ~ #hamitems { display: block; }
 }
-
-ul.nav {
-                  font-weight:bold;
-                  display: flex;
-                  list-style: none;
-                  padding: 10px;
-                  gap: 10px;
-                  align-items: center;
-                 }
 
             .footnote {
                        font-size: .83em;
