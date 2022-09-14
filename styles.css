@@ -1,7 +1,5 @@
 /* For the whole site */
-* {
-  box-sizing:border-box;
-}
+* {box-sizing:border-box;}
 
 :root {
   --step--2: clamp(0.67rem, calc(0.71rem + -0.05vw), 0.69rem);
@@ -10,14 +8,10 @@
   --step-1: clamp(1.20rem, calc(0.79rem + 2.05vw), 2.25rem);
   --step-2: clamp(1.44rem, calc(0.68rem + 3.78vw), 3.38rem);
   --step-3: clamp(1.73rem, calc(0.43rem + 6.51vw), 5.06rem);
-  --step-4: clamp(2.07rem, calc(-0.08rem + 10.77vw), 7.59rem);
-  --step-5: clamp(2.49rem, calc(-0.99rem + 17.37vw), 11.39rem);
 }
 
 
-html {
-  font-family: 'Courier New', monospace;
-}
+html {font-family: 'Courier New', monospace;}
 
 h1 {
   color:#FFFFFF;
@@ -28,13 +22,15 @@ h1 {
 }
 
 h2 {
-color:#ccd6f6;
-font-size: var(--step-1);
+  color:#ccd6f6;
+  font-size: var(--step-1);
+  margin:0;
 }
 
 h3 {
-color:#ccd6f6;
-font-size: var(--step-0);
+    color:#ccd6f6;
+    font-size: var(--step-0);
+    margin:0;
 }
 
 body {
@@ -43,39 +39,39 @@ body {
       color:#ccd6f6;
       margin: 0 auto;
       width: 80%;
-      }
+}
 
 p,li {
-   line-height: 1.5;
-   font-size: var(--step--1);
-  }
+  line-height: 1.5;
+  font-size: var(--step--1);
+}
 
-  a {
-    color: #FFFFFF;
-    text-decoration: none;
-    line-height: 1.5;
-    font-size: var(--step--1);
-    }
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+  line-height: 1.5;
+  font-size: var(--step--1);
+}
       
-      footer {
-             display: flex;
-             justify-content: space-between;
-             align-items: center;  
-             font-weight: bolder;
-             }
+footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;  
+        font-weight: bolder;         
+}
         
-             .mylogo {
-              color:#FFFFFF;
-              font-size: 2rem;
-              font-family: 'Bungee Shade', cursive;
-              margin: 0;
-             }
+.mylogo {
+         color:#FFFFFF;
+         font-size: 2rem;
+         font-family: 'Bungee Shade', cursive;
+         margin: 0;
+}
              
 ul.nav {
-  list-style-type: none;
-  display: flex;
-  padding:5%;
-          }
+        list-style-type: none;
+        display: flex;
+        padding:5%;
+}
 
 /* [ON BIG SCREEN] */
 /* (A) WRAPPER */
@@ -124,39 +120,37 @@ align-self: flex-start;
   #hamnav input:checked ~ #hamitems { display: block; }
 }
 
-            .footnote {
-                       font-size: .83em;
-                      }
+.footnote {
+           font-size: .83em;
+}
 
-              button {
-                      border:solid 2px;
-                      border-color: #ccd6f6;
-                      height: 30px;
-                      width: 150px;
-                      background-color: #050d18;
-                      border-radius: 5px;
-                     }
-
+button {
+        border:solid 2px;
+        border-color: #ccd6f6;
+        height: 30px;
+        width: 150px;
+        background-color: #050d18;
+        border-radius: 5px;
+        margin-bottom:10px;
+}
 /* For Home Page */
-
 .hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-  border: thick double #2172ff;
-  border-radius: 40px;
-  max-width: 85%;
-  margin: auto;
-  
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        border: thick double #2172ff;
+        border-radius: 40px;
+        max-width: 85%;
+        margin: auto;
 }
 
 .bigtitle {
-  color:#2172ff;
-  font-family: 'Bungee Shade', cursive;
-  letter-spacing: 2px;
-  font-size: var(--step-3);
-  text-align: center;
+           color:#2172ff;
+           font-family: 'Bungee Shade', cursive;
+           letter-spacing: 2px;
+           font-size: var(--step-3);
+           text-align: center;
 }
 
 .respimage {
@@ -177,25 +171,18 @@ align-self: flex-start;
         border: solid 2px;
         border-radius: 0 20px 20px 20px;
         padding: 20px 20px 0 20px;
-       }
+}
 
-  ul.gratlist {
-    padding: 5px;
-  }
+ul.gratlist {padding: 5px;}
 
-  li.gratitem {
-    margin-bottom: 15px;
-  }
+li.gratitem {margin-bottom: 15px;}
   
-  a.gratlinks {
+a.gratlinks {
     color: #FFFFFF;
     text-decoration: underline;
-  }
+}
 
-  .email-link {
-               color:#ccd6f6;
-              }
-
+.email-link {color:#ccd6f6;}
 /* For About Page */
 .container1 {
   display:flex;
@@ -212,64 +199,61 @@ align-self: flex-start;
   border-radius: 0 30px 30px 30px;
   align-items: center;
   justify-content: center;
+  margin-top: 5px;
 }
 
 .climb, .build, .arts {
+  width: 50%;
+  height: 40%;
+  object-fit:contain;
   padding: 10px;
   border: solid #ccd6f6 3px;
-  max-width: 50%;
 }
 /* For Experience Page */
-
 .container {
             display:flex;
             flex-direction: column;
             margin-left: 5%;
            }
         
-  ul.courses {
-              list-style-type:circle;
-              max-width: 80%;
-             }
+ul.courses {
+            list-style-type:circle;
+            max-width: 80%;
+}
 
-  .about, 
-  .experience, 
-  .education {
-           max-width: 100%;
-           padding: 10px;
-           margin: 10px;
-           border: solid #ccd6f6 3px;
-           border-radius: 0 30px 30px 30px;
-          }
+.about, .experience, .education {
+  max-width: 100%;
+  padding: 10px;
+  margin: 10px;
+  border: solid #ccd6f6 3px;
+  border-radius: 0 30px 30px 30px;
+}
 
-          .resume {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 10px;
-            margin: 10px;
-            border: solid #ccd6f6 3px;
-            border-radius: 0 30px 30px 30px;
-           }
+.resume {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         padding: 10px;
+         margin: 10px;
+         border: solid #ccd6f6 3px;
+         border-radius: 0 30px 30px 30px;
+}
 
-    .contact {
-              display:flex;
-              flex-direction: column;
-              align-items: center;
-              max-width: 100%;
-              padding: 10%;
-              margin:10%;
-              border: solid #ccd6f6 3vw;
-             }
-
+.contact {
+          display:flex;
+          flex-direction: column;
+          align-items: center;
+          max-width: 100%;
+          padding: 10%;
+          margin:10%;
+          border: solid #ccd6f6 3vw;
+}
 /* For Portfolio Page */
-
-.frame
-{
-    width: 80%;
-    height: 150px;
-    margin: auto;
-    border: 0;
+.frame {
+ width: 80%;
+ height: 150px;
+ margin: auto;
+ border: 0;
 }
 
 .UXdesign, .FrontEnd, .misc {
@@ -282,7 +266,6 @@ align-self: flex-start;
   border-radius: 0 30px 30px 30px;
 }
 /* For Contact Page */
-
 .container2 {
   display:flex;
   flex-direction: column;
