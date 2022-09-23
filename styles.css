@@ -167,7 +167,7 @@ button {
 .intro, .gratitude {
         width: 95%;
         margin: 10px;
-        border: solid 2px;
+        border: solid 4px;
         border-radius: 0 20px 20px 20px;
         padding: 20px 20px 0 20px;
 }
@@ -283,8 +283,8 @@ ul.courses {
 .tabcontent {
   float: left;
   padding: 0px 12px;
-  width: 80%;
   border:#2172ff solid 3px;
+  border-radius: 5px;
   height: 50vh;
   overflow: scroll;
   margin-bottom: 10px;
